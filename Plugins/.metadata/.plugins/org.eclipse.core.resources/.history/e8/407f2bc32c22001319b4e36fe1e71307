@@ -275,7 +275,7 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 private void loadConfig()
 {
   this.config.options().header("Probation Core Config");
-  this.config.addDefault("Probation Config", Boolean.valueOf(true));
+  this.config.addDefault("Probation Config", Boolean.valueOf(false));
   this.config.addDefault("probation.POP", Boolean.valueOf(true));
 
  
