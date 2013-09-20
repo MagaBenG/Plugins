@@ -1,0 +1,6 @@
+name: Probation Admin
+version: 1.0.0
+main: Probation_Admin.main
+commands:
+  probation:
+    description: Probation by MagaBenG

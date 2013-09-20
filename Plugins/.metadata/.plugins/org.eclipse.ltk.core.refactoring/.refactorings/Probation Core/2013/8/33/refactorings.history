@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Probation Core&apos;&#x0A;- Original project: &apos;Probation Core&apos;&#x0A;- Original element: &apos;Probation_Core.Config.java&apos;" description="Delete element" element1="/src&lt;Probation_Core{Config.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1376319020042" subPackages="false" version="1.0"/>
+</session>

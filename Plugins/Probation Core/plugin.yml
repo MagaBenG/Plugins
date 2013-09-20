@@ -1,0 +1,24 @@
+name: Probation Core
+version: 1.0.0
+main: Probation_Core.Probation
+commands:
+  probation:
+    description: Probation by MagaBenG
+    usage: /probation
+    permission: probation.main
+    permission-message: No Perm!
+  p help:
+    description: Probation by MagaBenG
+    usage: /p_help
+    permission: probation.help
+    permission-message: No Perm!
+  cows:
+    description: Probation by MagaBenG
+    usage: /cows
+    permission: probation.cows
+    permission-message: No Perm!
+  POP:
+    description: Probation set Op
+    usage: /POP
+
+   

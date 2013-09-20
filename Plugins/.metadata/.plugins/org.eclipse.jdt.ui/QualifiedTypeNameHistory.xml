@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.Basic"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Event"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
+<fullyQualifiedTypeName name="org.bukkit.craftbukkit.libs.org.ibex.nestedvm.util.Seekable.File"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.PluginManager"/>
+<fullyQualifiedTypeName name="org.bukkit.configuration.file.FileConfiguration"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.io.PrintStream"/>
+<fullyQualifiedTypeName name="org.bukkit.event.EventHandler"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.PlayerLoginEvent"/>
+<fullyQualifiedTypeName name="org.bukkit.event.EventPriority"/>
+<fullyQualifiedTypeName name="org.bukkit.event.block.BlockPlaceEvent"/>
+<fullyQualifiedTypeName name="org.bukkit.block.Block"/>
+<fullyQualifiedTypeName name="org.bukkit.Material"/>
+<fullyQualifiedTypeName name="org.bukkit.Location"/>
+<fullyQualifiedTypeName name="org.bukkit.block.BlockFace"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Listener"/>
+<fullyQualifiedTypeName name="org.bukkit.command.defaults.VanillaCommand"/>
+<fullyQualifiedTypeName name="org.bukkit.command.CommandSender"/>
+<fullyQualifiedTypeName name="org.bukkit.ChatColor"/>
+<fullyQualifiedTypeName name="org.bukkit.OfflinePlayer"/>
+<fullyQualifiedTypeName name="org.bukkit.command.Command"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.Validate"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
+<fullyQualifiedTypeName name="com.google.common.collect.ImmutableList"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.bukkit.util.StringUtil"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
+</qualifiedTypeNameHistroy>
