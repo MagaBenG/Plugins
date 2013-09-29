@@ -76,6 +76,10 @@ public void onDisable(){
   }
   public void onEnable(){
 
+	  /**
+	   * Makes Config.yml
+	   */
+	  
 	  this.MainFile = new File(getDataFolder(), "config.yml");
 
 	    if ((!this.MainFile.exists()) && (!getDataFolder().exists()))
@@ -99,6 +103,10 @@ public void onDisable(){
 	      logDebug("\t-----BEGIN LOG------");
 	    }
 	  
+	    /**
+	     * Prints to Debug to say Version And SubVersion And What Version Of MC To Use....
+	     */
+	    
 	  getLogger().info("[Probation Core] Probation Core v" + MainVersion +"." + SubVersion +" Is Running.");
 	  getLogger().info("[Probation Core] **** THIS IS A DEVELOPMENT BUILD USE WITH CAUTION ****");
 	  getLogger().info("[Probation Core] This Version Is To Be Used With Minecraft Version 1.6.2");	  
@@ -221,6 +229,10 @@ private void copy(InputStream in, File file)
     }
   }
 
+  /**
+   * Commands Are Placed HERE NEVER ANYWHERE ELSE!!!! 
+   */
+  
 public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		if(cmd.getName().equalsIgnoreCase("probation")){ 
 			sender.sendMessage(ChatColor.YELLOW + "-------------------------------------");
@@ -256,10 +268,14 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 		
 }
   
+/**
+ * Loads The Config.yml File And Also Adds Different Areas Of Value To Be Used In The Plugin...
+ */
+
 private void loadConfig()
 {
   this.config.options().header("Probation Core Config");
-  this.config.addDefault("Probation Config", Boolean.valueOf(false));
+  this.config.addDefault("Probation Config", Boolean.valueOf(true));
   this.config.addDefault("probation.POP", Boolean.valueOf(true));
 
  

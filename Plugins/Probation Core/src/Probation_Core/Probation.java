@@ -27,9 +27,11 @@ public class Probation extends JavaPlugin{
 	 * This is For The Info File and Also the /Probation Command....
 	 */
 	
-	public static double MainVersion = 1.0;
+	public static int MainVersion = 1;
 	
-	public static double SubVersion = 1.0;
+	public static int SubVersion = 1;
+	
+	public static int SubSetVersion = 0;
 	
 	
 	/**
@@ -61,7 +63,7 @@ public void onDisable(){
 	 * Logger Message Will Print When Debug Is Needed Like For A Wrong Value.....
 	 */
 	
-	getLogger().info("[Probation Core] Probation Core " + MainVersion + "." + SubVersion +" Has Been Disabled.");
+	getLogger().info("[Probation Core] Probation Core " + MainVersion + "." + SubVersion + "." +SubSetVersion + " Has Been Disabled.");
 	 
 
 	    this.values.clear();

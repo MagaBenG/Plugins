@@ -27,9 +27,11 @@ public class Probation extends JavaPlugin{
 	 * This is For The Info File and Also the /Probation Command....
 	 */
 	
-	public static double MainVersion = 1.0;
+	public static int MainVersion = 1;
 	
-	public static double SubVersion = 1.0;
+	public static int SubVersion = 1;
+	
+	public static int SubSetVersion = 0;
 	
 	
 	/**
@@ -40,13 +42,26 @@ public class Probation extends JavaPlugin{
 	public File MainFile;
 	public FileConfiguration config;
 
+	/**
+	 * Debug File And Debug Boolean Used for debug.... called at middle to end of file..... makes debug file....
+	 */
+	
 	private boolean debug;
 	 public File debugFile;
 
+	 
+	 /**
+	  * For The Banned Words And Values List Soon To Be Implemented 
+	  */
+	 
 	 public List<String> values = new ArrayList<String>();
 	  public List<String> bannedWords = new ArrayList<String>();
 	
 public void onDisable(){
+	
+	/**
+	 * Logger Message Will Print When Debug Is Needed Like For A Wrong Value.....
+	 */
 	
 	getLogger().info("[Probation Core] Probation Core " + MainVersion + "." + SubVersion +" Has Been Disabled.");
 	 
@@ -63,6 +78,10 @@ public void onDisable(){
   }
   public void onEnable(){
 
+	  /**
+	   * Makes Config.yml
+	   */
+	  
 	  this.MainFile = new File(getDataFolder(), "config.yml");
 
 	    if ((!this.MainFile.exists()) && (!getDataFolder().exists()))
@@ -86,6 +105,10 @@ public void onDisable(){
 	      logDebug("\t-----BEGIN LOG------");
 	    }
 	  
+	    /**
+	     * Prints to Debug to say Version And SubVersion And What Version Of MC To Use....
+	     */
+	    
 	  getLogger().info("[Probation Core] Probation Core v" + MainVersion +"." + SubVersion +" Is Running.");
 	  getLogger().info("[Probation Core] **** THIS IS A DEVELOPMENT BUILD USE WITH CAUTION ****");
 	  getLogger().info("[Probation Core] This Version Is To Be Used With Minecraft Version 1.6.2");	  
@@ -208,6 +231,10 @@ private void copy(InputStream in, File file)
     }
   }
 
+  /**
+   * Commands Are Placed HERE NEVER ANYWHERE ELSE!!!! 
+   */
+  
 public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		if(cmd.getName().equalsIgnoreCase("probation")){ 
 			sender.sendMessage(ChatColor.YELLOW + "-------------------------------------");
@@ -243,10 +270,14 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 		
 }
   
+/**
+ * Loads The Config.yml File And Also Adds Different Areas Of Value To Be Used In The Plugin...
+ */
+
 private void loadConfig()
 {
   this.config.options().header("Probation Core Config");
-  this.config.addDefault("Probation Config", Boolean.valueOf(false));
+  this.config.addDefault("Probation Config", Boolean.valueOf(true));
   this.config.addDefault("probation.POP", Boolean.valueOf(true));
 
  
